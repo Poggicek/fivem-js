@@ -4,18 +4,6 @@
   "description": "Javascript/Typescript wrapper for the FiveM natives",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "eslint . --ext .ts",
-    "prepare": "yarn build",
-    "prepublishOnly": "yarn lint",
-    "preversion": "yarn lint",
-    "version": "yarn format && git add -A src",
-    "postversion": "git push && git push --tags",
-    "typedoc": "typedoc",
-    "docs": "yarn typedoc -- --options typedoc.json"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/d0p3t/fivem-js.git"
